@@ -13,35 +13,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container navigation">
-        <nav class="site-navigation">
-          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-          <ul class="menu list">
-            <li class="menu-item">
-              <a href="" class="menu-link current">Студия</a>
+    <header class="header">
+      <div class="header__navigation container">
+        <nav class="header__site-nav">
+          <a href="./index.html" class="logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link header__menu-link--current"
+                >Студия</a
+              >
             </li>
-            <li class="menu-item">
-              <a href="./portfolio.html" class="menu-link">Портфолио</a>
+            <li class="header__menu-item">
+              <a href="./portfolio.html" class="header__menu-link">Портфолио</a>
             </li>
-            <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link"
-              ><svg class="contacts-icon" width="16" height="12">
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <a href="mailto:info@devstudio.com" class="header__contacts-link"
+              ><svg class="header__contacts-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-link"
-              ><svg class="contacts-icon" width="10" height="16">
+          <li class="header__contacts-item">
+            <a href="tel:+380961111111" class="header__contacts-link"
+              ><svg class="header__contacts-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -53,40 +59,40 @@
       <!-- hero -->
 
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button" data-modal-open>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="hero__button" data-modal-open>
           Заказать услугу
         </button>
       </section>
 
       <!-- features -->
       <section class="section">
-        <div class="container">
+        <div class="features container">
           <h2 class="visually-hidden">Особенности</h2>
-          <ul class="features list">
-            <li class="features-item icon-antenna">
-              <h3 class="features-title">Внимание к деталям</h3>
+          <ul class="features__list">
+            <li class="features__item features__icon-antenna">
+              <h3 class="features__title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="features-item icon-clock">
-              <h3 class="features-title">Пунктуальность</h3>
+            <li class="features__item features__icon-clock">
+              <h3 class="features__title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-item icon-diagram">
-              <h3 class="features-title">Планирование</h3>
+            <li class="features__item features__icon-diagram">
+              <h3 class="features__title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-item icon-astronaut">
-              <h3 class="features-title">Современные технологии</h3>
+            <li class="features__item features__icon-astronaut">
+              <h3 class="features__title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -95,7 +101,7 @@
           </ul>
         </div>
       </section>
-      <section class="section no-padding">
+      <section class="section section--no-padding">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work list">
@@ -474,7 +480,9 @@
     <footer class="footer">
       <div class="footer-page container">
         <div class="foter-left-part">
-          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+          <a href="./index.html" class="logo page-footer__logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
           <div class="footer-connect">
             <ul class="list">
               <li class="connect-item">
