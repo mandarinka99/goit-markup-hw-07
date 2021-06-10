@@ -5,6 +5,11 @@
   background-color: var(--secondary-background-color);
   color: var(--primary-white-color);
 
+  &__logo {
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+  }
+
   &__page {
     display: flex;
     align-items: baseline;

@@ -5,13 +5,10 @@
   line-height: 1.19;
   text-decoration: none;
   display: inline-block;
+
+  &__text {
+    color: var(--accent-color);
+  }
 }
 
-.logo__text {
-  color: var(--accent-color);
-}
 
-.page-footer__logo {
-  margin-bottom: 20px;
-  color: var(--primary-white-color);
-}

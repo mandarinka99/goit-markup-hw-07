@@ -110,11 +110,6 @@ address {
   color: var(--accent-color);
 }
 
-.page-footer__logo {
-  margin-bottom: 20px;
-  color: var(--primary-white-color);
-}
-
 .header {
   border-bottom: 1px solid var(--footer-border-color);
 }
@@ -568,6 +563,11 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+  color: var(--primary-white-color);
+}
+
+.footer .footer__logo {
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 
